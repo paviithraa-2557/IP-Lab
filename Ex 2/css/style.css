@@ -1,0 +1,19 @@
+body {
+  background-color:rgb(214, 172, 33)
+}
+
+h1 {
+  color:bisque;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
+.spl
+{
+  color:rgba(142, 16, 200, 0.746);
+  text-align:justify;
+}
