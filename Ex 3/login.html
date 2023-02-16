@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        
+    </title>
+<body bgcolor="grey">
+    <script>
+
+    </script>
+    <h2>Login</h2>
+    <p>
+        <form method="post" action="map.html">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" ><br>
+          
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+          
+            <label for="pass">Password:</label><br>
+            <input type="password" id="pass" name="password" minlength="8" required>
+          
+            <p>Select Destination</p>
+            <input type="radio" id="france" name="france">
+            <label for="france"> France</label><br>
+            <input type="radio" id="germany" name="germany">
+            <label for="germany"> Germany</label><br>
+            <input type="radio" id="moldova" name="moldova">
+            <label for="moldova"> Moldova</label><br><br>
+          
+            <input type="reset" value="Reset">
+            <br><br>
+            
+            <label for="start">From</label><br>
+            <input type="date" id="start" name="trip-start" min="2023-01-01" max="2023-12-31">
+            <br><br>
+          
+            <label for="end">Till</label><br>
+            <input type="date" id="end" name="trip-end"  min="2023-01-01" max="2023-12-31">
+            <br><br>
+    
+            <input type="range" id="hoteltype" name="hoteltype" min="1" max="100" value ="5" step="20">
+            <label for="hoteltype">Hotel Preferences(1-5)</label>
+            <br><br>
+           
+            <input type="submit" value="Submit">
+          </form> 
+    
+    
+    </p>
+   
+</body>
+</html>
+
