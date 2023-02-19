@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+
+    </head>
+<script languge="javascript">
+function validate()
+{
+var flag=1;
+if(document.myform.uname.value==""||document.myform.pass.value=="")
+{
+alert("Username and Password cannot be empty")
+ flag=0;
+}
+if(flag==1)
+{
+alert("VALID INPUT");
+ window.open("booking.html","right");
+}
+else
+{
+alert("INVALID INPUT");
+document.myform.focus();
+}
+}   
+</script>
+<body >
+
+    <h2>Login</h2>
+    <p>
+        <form name="myform" method="post" action="booking.html">
+            <label for="uname">Username:</label><br>
+            <input type="text" id="uname" name="uname" ><br>
+          
+            <label for="pass">Password:</label><br>
+            <input type="password" id="pass" name="password" minlength="8" required>
+          
+            <input type="reset" value="Reset">
+            <br><br>
+
+           
+            <input type="submit" value="Submit" onClick="validate()">
+          </form> 
+    
+    
+    </p>
+   
+</body>
+</html>
+
