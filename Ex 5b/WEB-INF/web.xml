@@ -1,0 +1,33 @@
+<web-app>
+
+    <servlet>
+        <servlet-name>HiddenForms</servlet-name>
+        <servlet-class>hiddenForms</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HiddenForms</servlet-name>
+        <url-pattern>/hiddenForms</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HiddenFormsGrade</servlet-name>
+        <servlet-class>Grade</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HiddenFormsGrade</servlet-name>
+        <url-pattern>/grade</url-pattern>
+    </servlet-mapping>
+    <servlet>
+
+        <servlet-name>HiddenFormsMark</servlet-name>
+        <servlet-class>Mark</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HiddenFormsMark</servlet-name>
+        <url-pattern>/mark</url-pattern>
+    </servlet-mapping>
+
+</web-app>
