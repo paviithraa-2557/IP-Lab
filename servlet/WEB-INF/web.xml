@@ -1,0 +1,53 @@
+<web-app>
+
+    <servlet>
+        <servlet-name>Hello</servlet-name>
+        <servlet-class>HelloWorld</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Hello</servlet-name>
+        <url-pattern>/HellWorld</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Assignment_1</servlet-name>
+        <servlet-class>Simple</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Assignment_1</servlet-name>
+        <url-pattern>/Hate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Assignment_2</servlet-name>
+        <servlet-class>Student</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Assignment_2</servlet-name>
+        <url-pattern>/Love</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Hit</servlet-name>
+        <servlet-class>HitCount</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Hit</servlet-name>
+        <url-pattern>/hc</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>hidden</servlet-name>
+        <servlet-class>HiddenForms</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>hidden</servlet-name>
+        <url-pattern>/hf</url-pattern>
+    </servlet-mapping>
+
+</web-app>
