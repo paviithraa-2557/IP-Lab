@@ -1,0 +1,56 @@
+<web-app>
+<!-- Program to display all the student details -->
+    <servlet>
+        <servlet-name>Display</servlet-name>
+        <servlet-class>Display</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Display</servlet-name>
+        <url-pattern>/display</url-pattern>
+    </servlet-mapping>
+     <servlet>
+
+<!-- Program to display all the student details dept wise -->  
+        <servlet-name>Department</servlet-name>
+        <servlet-class>DisplayDept</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Department</servlet-name>
+        <url-pattern>/dept</url-pattern>
+    </servlet-mapping>
+
+<!-- Program to Insert student record -->  
+     <servlet>
+        <servlet-name>Insert</servlet-name>
+        <servlet-class>Insert</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Insert</servlet-name>
+        <url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+
+<!-- Program to Update student record -->
+     <servlet>
+        <servlet-name>Update</servlet-name>
+        <servlet-class>Update</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Update</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+
+<!-- Program to Delete student record -->
+    <servlet>
+        <servlet-name>Delete</servlet-name>
+        <servlet-class>Delete</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Delete</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+</web-app>

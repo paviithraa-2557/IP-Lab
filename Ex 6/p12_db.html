@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Details</h1>   
+    <span>
+        <a href="./display">Display all students marks</a><br/>
+
+        <h3>Insert Student Record</h3>
+        <form action="./insert" name="insert">
+        <label for="deptid">Enter Register number</label>
+        <input type="text" id="dept"><br/>
+        <label for="deptid">Enter Name </label>
+        <input type="text" id="dept"><br/>
+        <label for="deptid">Enter Department</label>
+        <input type="text" id="dept"><br/>
+        <input type="submit" value="SUBMIT"/><br/>
+        </form>
+
+        <h3>Delete Student Record</h3>
+        <form action="./delete" name="delete">
+        <label for="deptid">Enter department ID of student</label>
+        <input type="text" id="dept">
+        <input type="submit" value="SUBMIT"/><br/>
+
+        <h3>Update Student Mark</h3>
+        <form action="./update" name="update">
+        <label for="deptid">Enter department ID of student:</label>
+        <input type="text" id="dept"><br/>
+        <label for="deptid">Enter mark:</label>
+        <input type="text" id="dept"><br/>
+        <input type="submit" value="SUBMIT"/><br/> 
+        
+        <h3>View Department Specific Mark Details</h3>
+        <form action="./dept">
+            <label for="course">Department</label>
+            <select id="course" name="course">
+            <option value="empty">--</option>
+            <option value="CSE">COMPUTER SCIENCE AND ENGINEERING</option>
+            <option value="ECE">ELECTRONICS AND COMMUNICATION ENGINEERING</option>
+            <option value="MECH">MECHANICAL ENGINEERING</option>
+            <br>
+            <br>
+            <input type="submit" value="SUBMIT"/>
+        </form>
+    </span>
+    
+</body>
+</html>
