@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Get User Information</title>
+  <script>
+    function getUserInformation() {
+  var id = document.getElementById("userId").value;
+
+  // Create a new XMLHttpRequest object
+  var xhttp = new XMLHttpRequest();
+
+  // Define the callback function
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      // Parse the XML response
+      var xmlDoc = this.responseXML;
+
+      // Find the user with the specified ID
+      var user = xmlDoc.querySelector("user[id='"+id+"']");
+
+      if (user === null) {
+        document.getElementById("result").innerHTML = "User not found";
+      } else {
+        var name = user.querySelector("name").textContent;
+        var destination = user.querySelector("destination").textContent;
+        var departureDate = user.querySelector("departureDate").textContent;
+        var returnDate = user.querySelector("returnDate").textContent;
+
+        // Display user information
+        var output = "<h1>Travel Details</h1>";
+        output += "<p>ID: " + id + "</p>";
+        output += "<p>Name: " + name + "</p>";
+        output += "<p>Destination: " + destination + "</p>";
+        output += "<p>Departure Date: " + departureDate + "</p>";
+        output += "<p>Return Date: " + returnDate + "</p>";
+
+        // Update the HTML content
+        document.getElementById("result").innerHTML = output;
+      }
+    }
+  };
+
+  // Open and send the request
+  xhttp.open("GET", "users.xml", true);
+  xhttp.send();
+}
+  </script>
+</head>
+<body>
+  <h1>Get Travel Information</h1>
+  <label for="userId">User ID:</label>
+  <input type="text" id="userId" name="userId">
+  <button onclick="getUserInformation()">Get Details</button>
+  <div id="result"></div>
+</body>
+</html>
+
+
+
